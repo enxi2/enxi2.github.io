@@ -1,0 +1,30 @@
+{
+  "name": "erinxi.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-css && npm run build-html",
+    "build-css": "sass src/:build/",
+    "build-html": "cp src/index.html index.html",
+    "serve": "http-server -p 5000",
+    "watch": "chokidar \"src\" -c \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinxi/erinxi.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinxi/erinxi.github.io/issues"
+  },
+  "homepage": "https://github.com/erinxi/erinxi.github.io#readme",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "http-server": "^14.0.0",
+    "mustache": "^4.2.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4"
+  }
+}
